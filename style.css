@@ -22,6 +22,18 @@ body {
     bottom: 0;
     z-index: -1;
 }
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;;
+        height: 100%;
+    }
+}
 #header{
     position: fixed;
     z-index: 1; /*cho thanh header chim xuong anh*/
@@ -49,7 +61,7 @@ body {
 }
 .logo-icon span{
     color: #38bdf8;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 .navbar{
@@ -67,6 +79,14 @@ body {
     color: #4f46e5;
 }
 .navbar a.active:hover{
+    color: #bae6fd;
+}
+.search-icon{
+    color: #38bdf8;
+    font-size: 22px;
+    margin-left: 112px;
+}
+.navbar div.search-icon:hover{
     color: #bae6fd;
 }
 ul.navbar li{
@@ -109,7 +129,7 @@ ul.navbar li{
 }
 #cart-icon{
     font-size: 35px;
-    margin-right: 7px;
+    margin-right: 44px;
 }
 #menu-icon{
     font-size: 35px;
@@ -166,7 +186,7 @@ ul.navbar li{
 }
 #wrapper{
     max-width: 1170px;
-    margin: 105px auto;
+    margin: 85px auto;
 }
 .headline{
     text-align: center;
@@ -174,12 +194,11 @@ ul.navbar li{
 }
 h3{
     font-size: 18px;
-    color: #111;
     padding: 10px 20px;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     border: 1px solid #bebebe;
     display: inline-block; /*bo cung kich thuoc border & h3*/
-    color: #555;
+    color: #55E6C1;
     font-weight: 600;
 }
 ul.products{
